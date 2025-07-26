@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Crash Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #1a1a1a; color: white; padding-top: 50px; }
+        #game { border: 2px solid #555; padding: 20px; width: 400px; margin: auto; background-color: #2a2a2a; border-radius: 10px; }
+        #multiplier { font-size: 5em; font-weight: bold; color: #4caf50; }
+        #status { font-size: 1.5em; margin-top: 20px; color: #ffc107; }
+    </style>
+</head>
+<body>
+    <div id="game">
+        <h1>Crypto Crash</h1>
+        <div id="multiplier">1.00x</div>
+        <div id="status">Connecting...</div>
+        <button id="cashout-btn">CASH OUT</button>
+    </div>
+
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

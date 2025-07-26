@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "e6de761e-2e2f-4019-b0f8-6e8c5f79c4db",
+		"name": "Crypto Crash Game",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46941427"
+	},
+	"item": [
+		{
+			"name": "Test User",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Wallet Balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/wallet/6884f84df3a798e1225dbd0b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"wallet",
+						"6884f84df3a798e1225dbd0b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Place Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"6884f84df3a798e1225dbd0b\",\r\n    \"amountUSD\": 10,\r\n    \"currency\": \"BTC\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/bet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
