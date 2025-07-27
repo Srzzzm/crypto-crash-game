@@ -16,7 +16,7 @@ gameService.setBroadcast(broadcast);
 
 
 app.use(express.json());
-app.use(express.static('public'));
+
 
 
 app.use('/api', require('./routes/api'));
