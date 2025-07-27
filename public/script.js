@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io('https://crypto-crash-sriram.onrender.com');
 
 const multiplierEl = document.getElementById('multiplier');
 const statusEl = document.getElementById('status');
