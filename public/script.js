@@ -1,4 +1,4 @@
-const socket = io('http://localhost:5000');
+const socket = io();
 
 const multiplierEl = document.getElementById('multiplier');
 const statusEl = document.getElementById('status');
